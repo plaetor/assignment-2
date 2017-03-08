@@ -2,13 +2,61 @@
 /* We start we the general styles that apply to all */
 * {
 	box-sizing: border-box;
+	border:1px solid red;
 }
 
-body {
+html, body {
+	background-color: #fff;
+	color: #000;
 	font-family: "Arial", sans-serif;
 	font-size: small;
 	margin: 0;
 	padding: 0;
+}
+
+h1 {
+	font-size: 1.75em;
+	width: 20%;
+	margin: 0 auto;
+	padding: 2em 2em 1em 2em;
+}
+
+p {
+	margin: 0 0.5em 0.5em 0.5em;
+	padding: 0.5em 1em 1em 1em;
+	line-height: 150%;	
+	clear: right;
+}
+
+h2 {
+	display: inline-block;
+	float: right;
+	padding: 0.5em 1em 0.5em 0.5em;
+	margin: 0.5em 0.5em 0 0.5em;
+	background-color: #222233;
+	color: #aaccff;
+	font-size: 1.25em;
+	/*width: 30%;*/
+
+}
+
+#carTxt {
+	background-color: #c02f1d;
+	color: #fff;
+}
+
+#bikeTxt {
+	background-color: #093145;
+	color: #fff;
+}
+
+#truckTxt {
+	background-color: #829356;
+	color: #fff;
+}
+
+.floatFix {
+	clear: both;
 }
 
 /* Now for the basic responsive framework */
@@ -21,8 +69,11 @@ body {
 	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
 	.col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, 
 	.col-lg-12 {
+		position: relative;
 		float: left;
-		border: 1px solid #000;
+		/*border: 1px solid #f1f1f1;*/
+		margin: 0;
+		padding: 0;
 	}
 
 	.col-lg-1 {
@@ -38,7 +89,8 @@ body {
 	}
 
 	.col-lg-4 {
-		width: 33%;
+		width: 33.33%;
+
 	}
 
 	.col-lg-5 {
@@ -80,8 +132,11 @@ body {
 	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
 	.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, 
 	.col-md-12 {
+		position: relative;
 		float: left;
-		border: 1px solid #000;
+		/*border: 1px solid #f1f1f1;*/
+		margin: 0;
+		padding: 0;
 	}
 
 	.col-md-1 {
@@ -133,3 +188,5 @@ body {
 	}
 
 }
+
+/*Styles for the actual pages -Large screen- */
